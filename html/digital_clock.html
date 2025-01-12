@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Time Management App</title>
+    <link rel="stylesheet" href="../css/digital_clock_style.css">
+</head>
+<body>
+    <header>
+        <h1>Time Management App</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="pomodoro.html">Pomodoro Timer</a>
+            <a href="digital_clock.html" class="active">Digital Clock</a>
+            <a href="reminder.html">Reminder</a>
+            <a href="stopwatch.html">Stopwatch</a>
+            <a href="alarm.html">Alarm Clock</a>
+            <a href="speakout.html">Speakout Timer</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Digital Clock</h2>
+        <div class="digital-clock-display">
+            <p id="digital-clock">00:00:00 AM</p>
+            <div id="date-display" style="margin: 10px; font-size: 18px; font-weight: bold;"></div>
+            <button id="toggle-format">Switch to 24-Hour Format</button>
+        </div>
+    </main>
+
+    <script src="../js/digital_clock.js"></script>
+</body>
+</html>

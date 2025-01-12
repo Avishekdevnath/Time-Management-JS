@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Time Management App",
+    "description": "A time management app with Pomodoro Timer, Digital Clock, Reminder, Stopwatch, Alarm Clock, and Speakout Timer.",
+    "version": "1.0",
+    "icons": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    },
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+      }
+    },
+    "permissions": []
+  }
+  

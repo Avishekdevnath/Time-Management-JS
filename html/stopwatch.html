@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch - Time Management App</title>
+    <link rel="stylesheet" href="../css/stopwatch_style.css">
+</head>
+<body>
+    <header>
+        <h1>Time Management App</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="pomodoro.html">Pomodoro Timer</a>
+            <a href="digital_clock.html">Digital Clock</a>
+            <a href="reminder.html">Reminder</a>
+            <a href="stopwatch.html" class="active">Stopwatch</a>
+            <a href="alarm.html">Alarm Clock</a>
+            <a href="speakout.html">Speakout Timer</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Stopwatch</h2>
+        <div class="stopwatch-container">
+            <p id="stopwatch-display">00:00:00.000</p>
+            <div class="stopwatch-controls">
+                <button id="start-stopwatch">Start</button>
+                <button id="lap-stopwatch" disabled>Lap</button>
+                <button id="stop-stopwatch" disabled>Stop</button>
+                <button id="reset-stopwatch" disabled>Reset</button>
+            </div>
+            <ul id="lap-list"></ul>
+        </div>
+    </main>
+
+    <script src="../js/stopwatch.js"></script>
+</body>
+</html>

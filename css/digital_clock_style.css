@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.digital-clock-display {
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #f9f9f9;
+}
+
+#digital-clock {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+#toggle-format {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#toggle-format:hover {
+    background-color: #0056b3;
+}

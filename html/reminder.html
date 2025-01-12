@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder - Time Management App</title>
+    <link rel="stylesheet" href="../css/reminder_style.css">
+</head>
+<body>
+    <header>
+        <h1>Time Management App</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="pomodoro.html">Pomodoro Timer</a>
+            <a href="digital_clock.html">Digital Clock</a>
+            <a href="reminder.html" class="active">Reminder</a>
+            <a href="stopwatch.html">Stopwatch</a>
+            <a href="alarm.html">Alarm Clock</a>
+            <a href="speakout.html">Speakout Timer</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Reminder</h2>
+        <div class="reminder-container">
+            <input type="text" id="reminder-input" placeholder="Enter reminder">
+            <input type="datetime-local" id="reminder-time">
+            <button id="add-reminder">Add Reminder</button>
+        </div>
+        <ul id="reminder-list"></ul>
+    </main>
+
+    <script src="../js/reminder.js"></script>
+</body>
+</html>

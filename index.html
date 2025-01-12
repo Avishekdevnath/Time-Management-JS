@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Time Management App</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="html/pomodoro.html">Pomodoro Timer</a>
+            <a href="html/digital_clock.html">Digital Clock</a>
+            <a href="html/reminder.html">Reminder</a>
+            <a href="html/stopwatch.html">Stopwatch</a>
+            <a href="html/alarm.html">Alarm Clock</a>
+            <a href="html/speakout.html">Speakout Timer</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to the Time Management App</h2>
+        <p>Select a feature from the navigation menu to get started.</p>
+        <div id="date-display" style="margin-top: 20px; font-size: 18px; font-weight: bold;"></div>
+    </main>
+
+    <script>
+        function showDate() {
+            const dateDisplay = document.getElementById('date-display');
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            dateDisplay.textContent = now.toLocaleDateString(undefined, options);
+        }
+
+        showDate();
+    </script>
+</body>
+</html>
