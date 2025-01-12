@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.speakout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.speakout-input input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.speakout-buttons button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+}
+
+.speakout-buttons button:hover {
+    background-color: #45a049;
+}
+
+.speakout-buttons button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
