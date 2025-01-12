@@ -23,11 +23,14 @@
     <main>
         <h2>Alarm Clock</h2>
         <div class="alarm-container">
-            <input type="time" id="alarm-time">
-            <input type="text" id="alarm-description" placeholder="Enter alarm description">
-
-            <button id="set-alarm">Set Alarm</button>
-            <button id="stop-alarm" style="display: none;">Stop Alarm</button>
+            <div class="alarm-inputs">
+                <input type="time" id="alarm-time">
+                <input type="text" id="alarm-description" placeholder="Enter alarm description">
+            </div>
+            <div class="alarm-buttons">
+                <button id="set-alarm">Set Alarm</button>
+                <button id="stop-alarm" style="display: none;">Stop Alarm</button>
+            </div>
         </div>
         <ul id="alarm-list"></ul>
     </main>
