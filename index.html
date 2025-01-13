@@ -33,8 +33,12 @@
             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             dateDisplay.textContent = now.toLocaleDateString(undefined, options);
         }
-
+    
         showDate();
+    
+        // Refresh the date every second (optional for dynamic display)
+        setInterval(showDate, 1000);
     </script>
+    
 </body>
 </html>

@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
 header {
@@ -18,33 +19,39 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    margin: 10px 0;
 }
 
 nav a {
-    margin: 0 10px;
     text-decoration: none;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 5px;
+    background-color: #007BFF;
+    transition: background-color 0.3s ease;
 }
 
-
-nav a:hover, nav a.active {
-    background-color: #555;
+nav a:hover,
+nav a.active {
+    background-color: #0056b3;
 }
 
 main {
     padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 h2 {
     margin-bottom: 20px;
+    font-size: 22px;
 }
 
-
-#pomodor-title{
+#pomodor-title {
     text-align: center;
 }
+
 /* Center Pomodoro Functional Part */
 .pomodoro-container {
     display: flex;
@@ -58,6 +65,7 @@ h2 {
     border: 2px solid #4CAF50;
     border-radius: 10px;
     background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Pomodoro Settings Section */
@@ -116,11 +124,13 @@ h2 {
     width: 100%;
     max-width: 300px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #pomodoro-timer {
     font-size: 36px;
     margin: 20px 0;
+    font-weight: bold;
 }
 
 #current-task {
@@ -128,6 +138,7 @@ h2 {
     font-weight: bold;
     margin-bottom: 10px;
     display: none;
+    color: #4CAF50;
 }
 
 /* Timer Buttons */
@@ -140,6 +151,7 @@ h2 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .pomodoro-timer-display button:hover {
@@ -148,6 +160,15 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    nav a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
     .pomodoro-container {
         flex-direction: column;
         align-items: center;
@@ -165,9 +186,18 @@ h2 {
 }
 
 @media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav a {
-        padding: 5px 8px;
-        font-size: 12px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .pomodoro-container {
+        padding: 15px;
     }
 
     .pomodoro-settings input,
