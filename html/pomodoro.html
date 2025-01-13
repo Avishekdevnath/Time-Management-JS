@@ -12,18 +12,27 @@
         <nav>
             <a href="../index.html">Home</a>
             <a href="pomodoro.html" class="active">Pomodoro Timer</a>
-            <a href="digital_clock.html" >Digital Clock</a>
+            <a href="digital_clock.html">Digital Clock</a>
             <a href="reminder.html">Reminder</a>
             <a href="stopwatch.html">Stopwatch</a>
             <a href="alarm.html">Alarm Clock</a>
             <a href="speakout.html">Speakout Timer</a>
-        
         </nav>
     </header>
 
     <main>
         <h2 id="pomodor-title">Pomodoro Timer</h2>
         <div class="pomodoro-container">
+            <!-- Pomodoro Timer Display Section -->
+            <div class="pomodoro-timer-display">
+                <p id="current-task" style="display: none;"></p>
+                <p id="pomodoro-timer">25:00:000</p>
+                <button id="start-pomodoro">Start</button>
+                <button id="pause-pomodoro">Pause</button>
+                <button id="reset-pomodoro">Reset</button>
+                <button id="stop-sound" style="display: none;">Stop Sound</button>
+            </div>
+
             <!-- Pomodoro Settings Section -->
             <div class="pomodoro-settings">
                 <label for="pomodoro-duration">Set Timer (minutes):</label>
@@ -33,16 +42,6 @@
                 <input type="text" id="pomodoro-task" placeholder="Enter task topic">
                 
                 <button id="set-pomodoro">Set</button>
-            </div>
-            
-            <!-- Pomodoro Timer Display Section -->
-            <div class="pomodoro-timer-display">
-                <p id="current-task" style="display: none;"></p>
-                <p id="pomodoro-timer">25:00:000</p>
-                <button id="start-pomodoro">Start</button>
-                <button id="pause-pomodoro">Pause</button>
-                <button id="reset-pomodoro">Reset</button>
-                <button id="stop-sound" style="display: none;">Stop Sound</button> <!-- New Stop Sound Button -->
             </div>
         </div>
     </main>
