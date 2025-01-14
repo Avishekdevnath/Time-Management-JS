@@ -130,6 +130,15 @@ main {
     background-color: #45a049;
 }
 
+#pomodoro-duration{
+width: auto;
+}
+#pomodoro-task{
+width: auto;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .pomodoro-container {
